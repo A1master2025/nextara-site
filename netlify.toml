@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/analytics-assessment.html"
+  to = "/analytics-assessment"
+  status = 301
+  force = true
