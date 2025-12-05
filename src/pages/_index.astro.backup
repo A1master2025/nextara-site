@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Digital Credibility Score Websites & Technical SEO | NexTara AI Solutions"
+  description="NexTara AI Solutions rebuilds websites to achieve 900+ Digital Credibility Scores across SEO, accessibility, performance, and analytics integrity."
+>
+
+<section class="hero">
+
+  <div class="badge">
+    <span>Digital Credibility Score (DCS)</span>
+    <span>900+ builds only</span>
+  </div>
+
+  <h1>
+    Your website should pass the credibility test
+    <br />
+    before you spend another dollar on traffic.
+  </h1>
+
+  <p class="lead">
+    NexTara rebuilds your site around a measurable Digital Credibility Score —
+    a single number that reflects SEO readiness, accessibility compliance,
+    performance, and analytics integrity — the things that determine whether
+    your campaigns convert.
+  </p>
+
+  <div class="hero-actions">
+    <button class="btn-primary" id="cta-dcs-audit">
+      Get your free DCS audit
+    </button>
+
+    <button class="btn-secondary" id="cta-consult">
+      Schedule a strategy consult
+    </button>
+  </div>
+
+</section>
+
+</BaseLayout>
