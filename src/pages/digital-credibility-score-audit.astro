@@ -1,0 +1,1363 @@
+---
+/**
+ * Digital Credibility Score (DCS) Audit Landing Page
+ * Version: 2.0.0 - DIOS Compliant (Elite Tier)
+ * PromptCore Alignment: v3.7
+ *
+ * Measurement Framework v2.1 Compliant
+ * All data-nt-* attributes are GOVERNANCE-LOCKED
+ */
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "Digital Credibility Score Audit | NexTara AI Solutions";
+const pageDescription =
+  "Get a diagnostic Digital Credibility Score (DCS) audit of your website. Technical, UX, schema, and measurement assessment engineered for AI-search and enterprise governance.";
+
+const siteBase = "https://nextara-ai-solutions.netlify.app";
+const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+>
+  <main class="nt-lp" id="main-content">
+    <!-- =======================================================
+         SECTION: HERO
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-hero"
+      data-nt-section="dcs_hero"
+    >
+      <div class="nt-lp-container">
+        <div class="nt-lp-hero-grid">
+          <!-- Hero Content -->
+          <div class="nt-lp-hero-content">
+            <div class="nt-lp-eyebrow-row">
+              <span class="nt-lp-eyebrow-pill">
+                Digital Credibility Score (DCS) Audit
+              </span>
+              <span class="nt-lp-eyebrow-tier">
+                Designed for DCS&nbsp;900+ builds
+              </span>
+            </div>
+
+            <h1 class="nt-lp-hero-title">
+              See Your Website the Way AI Search Sees It
+            </h1>
+
+            <p class="nt-lp-hero-lead">
+              Your website already has a score in the eyes of search engines and AI systems.
+              This audit tells you what that score really is—and what it will take to operate
+              in the same tier as category leaders.
+            </p>
+
+            <ul
+              class="nt-lp-hero-bullets"
+              aria-label="Key outcomes of your DCS audit"
+            >
+              <li>Full DCS rubric across 10 enterprise criteria</li>
+              <li>AI-search readiness and schema alignment review</li>
+              <li>UX, accessibility, and performance diagnostics</li>
+              <li>Measurement and conversion path verification</li>
+              <li>Prioritized roadmap to elevate your score</li>
+            </ul>
+
+            <div class="nt-lp-hero-cta">
+              <a
+                href="#dcs-form"
+                class="nt-btn nt-btn-primary"
+                data-nt-event="dcs_start"
+              >
+                Get My DCS Audit
+              </a>
+              <a
+                href="#dcs-included"
+                class="nt-btn nt-btn-secondary"
+              >
+                See What's Included
+              </a>
+            </div>
+
+            <p class="nt-lp-hero-footnote">
+              This is a diagnostic engagement, not a generic report. You'll receive a scored
+              DCS profile, a walkthrough call, and a clear decision path for next steps.
+            </p>
+
+            <div class="nt-lp-trust-row" aria-label="Trust indicators">
+              <div class="nt-lp-trust-item">
+                <span class="nt-lp-trust-label">Best fit for</span>
+                <span class="nt-lp-trust-value">
+                  B2B & professional services with complex sales cycles
+                </span>
+              </div>
+              <div class="nt-lp-trust-item">
+                <span class="nt-lp-trust-label">Typical engagement</span>
+                <span class="nt-lp-trust-value">
+                  Single site, 60–90 minute debrief, executive-ready summary
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Placeholder -->
+          <div class="nt-lp-hero-visual">
+            <div
+              class="nt-lp-dcs-placeholder"
+              aria-label="Digital Credibility Score dashboard preview"
+            >
+              <span class="nt-lp-placeholder-label">DCS Audit Snapshot</span>
+              <div class="nt-lp-dcs-gauge">
+                <div class="nt-lp-dcs-score-ring">
+                  <span class="nt-lp-dcs-score-value">946</span>
+                  <span class="nt-lp-dcs-score-caption">Sample Score</span>
+                </div>
+                <div class="nt-lp-dcs-score-bands">
+                  <span class="nt-lp-dcs-band nt-lp-dcs-band-low">Sub-700</span>
+                  <span class="nt-lp-dcs-band nt-lp-dcs-band-mid">700–899</span>
+                  <span class="nt-lp-dcs-band nt-lp-dcs-band-high">900+</span>
+                </div>
+              </div>
+              <div class="nt-lp-dcs-metrics">
+                <div class="nt-lp-dcs-metric">
+                  <span class="nt-lp-dcs-metric-label">Schema Integrity</span>
+                  <span class="nt-lp-dcs-metric-value">Strong</span>
+                </div>
+                <div class="nt-lp-dcs-metric">
+                  <span class="nt-lp-dcs-metric-label">Measurement Readiness</span>
+                  <span class="nt-lp-dcs-metric-value nt-lp-metric-warning">Needs review</span>
+                </div>
+                <div class="nt-lp-dcs-metric">
+                  <span class="nt-lp-dcs-metric-label">AI-Search Fit</span>
+                  <span class="nt-lp-dcs-metric-value">Emerging</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Proof Row -->
+        <div class="nt-lp-social-proof" aria-label="Representative client feedback">
+          <div class="nt-lp-quote-card">
+            <p class="nt-lp-quote-text">
+              "The DCS audit didn't just tell us what was broken. It gave our leadership team
+              a shared language for prioritizing fixes."
+            </p>
+            <p class="nt-lp-quote-meta">
+              VP Marketing, B2B services organization
+            </p>
+          </div>
+          <div class="nt-lp-fit-card">
+            <h2 class="nt-lp-fit-heading">Who this is—and is not—for</h2>
+            <ul class="nt-lp-fit-list">
+              <li>Designed for teams treating their website as a primary growth asset</li>
+              <li>Best when you're ready to act on findings within the next 90 days</li>
+              <li>Not ideal if you have no ability to deploy design or dev changes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: GAP / PROBLEM
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-gap"
+      data-nt-section="dcs_gap"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          The Gap Between "We Have a Website" and "We Can Trust Our Website"
+        </h2>
+
+        <p class="nt-lp-section-lead">
+          Most sites were launched for brand presence, not for AI-search, structured data,
+          or signal-rich measurement. The result is a credibility gap: the experience you
+          believe you are delivering and the one algorithms actually see are not the same.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-3">
+          <div class="nt-lp-card">
+            <h3>Invisible to AI-Search</h3>
+            <p>
+              Content is written for humans, but not mapped to entities, schema, and
+              structured signals. AI-systems struggle to understand who you serve and why
+              you should rank.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <h3>Fragmented User Experience</h3>
+            <p>
+              Navigation, mobile layouts, and trust elements evolve ad-hoc. The experience
+              feels "fine" internally but introduces friction at each conversion step.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <h3>Unreliable Measurement</h3>
+            <p>
+              Analytics tells you what happened, not why—and only for the visitors you can
+              actually track. Decisions are made on partial, inconsistent information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: WHAT'S INCLUDED
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-included"
+      id="dcs-included"
+      data-nt-section="dcs_included"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">What Your DCS Audit Includes</h2>
+
+        <div class="nt-lp-grid nt-lp-grid-4">
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">📊</div>
+            <h3>Full DCS Scorecard</h3>
+            <p>
+              Diagnostic scoring across SEO, UX, schema, accessibility, performance,
+              and measurement—mapped to the NexTara DCS rubric.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">🧭</div>
+            <h3>AI-Search Readiness Review</h3>
+            <p>
+              Evaluation of content hierarchy, internal linking, entities, and markup for
+              AI-driven discovery and retrieval scenarios.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">🧱</div>
+            <h3>Experience & Trust Layer Audit</h3>
+            <p>
+              Assessment of credibility signals, visual hierarchy, messaging clarity,
+              and conversion paths across key templates.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">🎯</div>
+            <h3>Measurement & Conversion Review</h3>
+            <p>
+              Examination of tracking coverage, key events, funnels, and lead capture
+              readiness against your growth objectives.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="nt-lp-grid nt-lp-grid-3"
+          style="margin-top: var(--space-6, 1.5rem);"
+        >
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">🧩</div>
+            <h3>Prioritized Action Roadmap</h3>
+            <p>
+              A sequenced list of recommendations, grouped by effort and impact, so your
+              team knows exactly where to start.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">🤝</div>
+            <h3>Executive Debrief Session</h3>
+            <p>
+              Live walkthrough of your DCS profile with time for Q&amp;A, trade-off
+              discussion, and decision-support.
+            </p>
+          </div>
+
+          <div class="nt-lp-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">📂</div>
+            <h3>Implementation-Ready Artifacts</h3>
+            <p>
+              Clear, organized outputs your internal or external teams can plug directly
+              into their design, dev, and analytics workflows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: SAMPLE REPORT
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-sample"
+      id="dcs-sample"
+      data-nt-section="dcs_sample"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">What You'll Actually Receive</h2>
+
+        <p class="nt-lp-section-lead">
+          This is not a generic SEO scan or automated lighthouse export. It's a structured
+          diagnostic built so leadership, marketing, and technical teams can act on the
+          same set of facts.
+        </p>
+
+        <div class="nt-lp-sample-layout">
+          <div
+            class="nt-lp-sample-placeholder"
+            aria-label="Sample DCS audit report preview"
+          >
+            <span class="nt-lp-placeholder-label">Sample DCS Report</span>
+            <div class="nt-lp-sample-pages">
+              <div class="nt-lp-sample-page">Executive Summary</div>
+              <div class="nt-lp-sample-page">Score Breakdown</div>
+              <div class="nt-lp-sample-page">Findings by Pillar</div>
+              <div class="nt-lp-sample-page">Recommended Roadmap</div>
+            </div>
+          </div>
+
+          <div class="nt-lp-sample-copy">
+            <ul class="nt-lp-sample-list">
+              <li>Plain-language explanation of where your score is strong or at risk</li>
+              <li>Side-by-side view of "current state" vs "target state"</li>
+              <li>Call-ready narrative you can share with internal stakeholders</li>
+              <li>Clear options: do-it-yourself, work with your existing partners, or involve NexTara</li>
+            </ul>
+            <p class="nt-lp-sample-footnote">
+              You retain full ownership of the audit artifacts. The DCS rubric is designed
+              to support your long-term decision-making, not create dependency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: IMPACT
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-impact"
+      data-nt-section="dcs_impact"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">What Changes After a DCS Audit</h2>
+
+        <p class="nt-lp-section-lead">
+          The DCS audit gives you a shared, objective view of your digital credibility.
+          That clarity is what unlocks faster decisions, better prioritization, and more
+          confident investments.
+        </p>
+
+        <div class="nt-lp-columns nt-lp-columns-3">
+          <div class="nt-lp-stat">
+            <span class="nt-lp-stat-value">1</span>
+            <span class="nt-lp-stat-label">
+              Unified narrative your team can use to explain what's working and what's not
+            </span>
+          </div>
+
+          <div class="nt-lp-stat">
+            <span class="nt-lp-stat-value">3</span>
+            <span class="nt-lp-stat-label">
+              Clear horizons—stabilize, modernize, and optimize—mapped to your score
+            </span>
+          </div>
+
+          <div class="nt-lp-stat">
+            <span class="nt-lp-stat-value">90</span>
+            <span class="nt-lp-stat-label">
+              Day planning window anchored by a realistic, sequenced roadmap
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: FAQ
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-faq"
+      data-nt-section="dcs_faq"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading" id="dcs-faq-heading">
+          Frequently Asked Questions
+        </h2>
+
+        <div
+          class="nt-lp-faq-list"
+          role="list"
+          aria-labelledby="dcs-faq-heading"
+        >
+          <details>
+            <summary>Is this a technical audit, a UX audit, or an SEO audit?</summary>
+            <p>
+              The DCS audit spans all three. It looks at how your site performs technically,
+              how it communicates and converts for users, and how it surfaces in search and
+              AI-driven experiences. The goal is a single, integrated view—not separate reports.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do you need access to our analytics or tag manager?</summary>
+            <p>
+              Access is highly recommended for a complete view, but the core DCS assessment
+              can be performed using your public site and existing artifacts. We'll align on
+              scope and access requirements before we begin.
+            </p>
+          </details>
+
+          <details>
+            <summary>Will you implement the recommendations for us?</summary>
+            <p>
+              The audit is implementation-agnostic. You can act on the findings internally,
+              with existing partners, or with NexTara. If you'd like implementation support,
+              we'll scope that as a separate engagement.
+            </p>
+          </details>
+
+          <details>
+            <summary>What's the typical timeline?</summary>
+            <p>
+              Most single-site audits are completed within 5–7 business days of kickoff,
+              including the debrief session. More complex ecosystems may require additional time.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can we repeat the DCS audit after making changes?</summary>
+            <p>
+              Yes. Many teams treat DCS as a recurring checkpoint—before major campaigns, rebrands,
+              or platform changes—to ensure credibility keeps pace with their growth plans.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SECTION: FORM / CTA
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+         data-nt-form: Form tracking identifier (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-form-section"
+      id="dcs-form"
+      data-nt-section="dcs_form"
+    >
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">Request Your Digital Credibility Score Audit</h2>
+
+        <p class="nt-lp-section-lead">
+          Share a few details about your website and growth objectives. We'll confirm fit,
+          scope the audit, and align on timeline and next steps.
+        </p>
+
+        <form
+          class="nt-form"
+          name="dcs-assessment"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          data-nt-form="dcs_assessment"
+          action="/thank-you"
+        >
+          <!-- Honeypot field for spam protection -->
+          <p class="nt-form-honeypot" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <!-- Hidden form name for Netlify -->
+          <input type="hidden" name="form-name" value="dcs-assessment" />
+
+          <div class="nt-form-grid">
+            <div class="nt-form-row">
+              <label for="dcs-name">
+                <span class="nt-form-label">
+                  Full Name
+                  <span class="nt-form-required" aria-label="required">*</span>
+                </span>
+                <input
+                  type="text"
+                  id="dcs-name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  placeholder="Your full name"
+                />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="dcs-email">
+                <span class="nt-form-label">
+                  Work Email
+                  <span class="nt-form-required" aria-label="required">*</span>
+                </span>
+                <input
+                  type="email"
+                  id="dcs-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@company.com"
+                />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="dcs-company">
+                <span class="nt-form-label">
+                  Company
+                  <span class="nt-form-required" aria-label="required">*</span>
+                </span>
+                <input
+                  type="text"
+                  id="dcs-company"
+                  name="company"
+                  required
+                  autocomplete="organization"
+                  placeholder="Your company name"
+                />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="dcs-website">
+                <span class="nt-form-label">
+                  Website URL
+                  <span class="nt-form-required" aria-label="required">*</span>
+                </span>
+                <input
+                  type="url"
+                  id="dcs-website"
+                  name="website"
+                  required
+                  inputmode="url"
+                  autocomplete="url"
+                  placeholder="https://yoursite.com"
+                />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="dcs-stage">
+                <span class="nt-form-label">Current Website Stage</span>
+                <select id="dcs-stage" name="website_stage">
+                  <option value="" disabled selected>Select the closest fit</option>
+                  <option value="recent-launch">Recently launched, needs validation</option>
+                  <option value="mature-but-unchanged">Mature site, limited recent changes</option>
+                  <option value="actively-evolving">Actively evolving with frequent updates</option>
+                  <option value="pre-rebuild">Planning a redesign or replatform</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="dcs-priority">
+                <span class="nt-form-label">Primary Credibility Priority</span>
+                <select id="dcs-priority" name="priority">
+                  <option value="" disabled selected>Select priority</option>
+                  <option value="ai-search-readiness">AI-search readiness</option>
+                  <option value="conversion-paths">Conversion paths and lead capture</option>
+                  <option value="measurement">Measurement and analytics alignment</option>
+                  <option value="overall-score">Overall DCS improvement</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="nt-form-row nt-form-row-full">
+              <label for="dcs-context">
+                <span class="nt-form-label">
+                  What questions should this audit help you answer?
+                </span>
+                <textarea
+                  id="dcs-context"
+                  name="context"
+                  rows="4"
+                  placeholder="For example: how credible do we look compared to peers, where are we losing trust in the journey, what needs to be true before our next major campaign..."
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="nt-btn nt-btn-primary nt-btn-block"
+            data-nt-event="dcs_submit"
+          >
+            Request My DCS Audit
+          </button>
+
+          <p class="nt-form-footnote">
+            Your information is processed in line with enterprise-grade data handling
+            practices. We'll use these details solely to coordinate your DCS audit and
+            follow-up communication.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+/* =======================================================
+   LANDING PAGE STYLES - DCS AUDIT (Elite Tier)
+   Inherits baseline LP patterns; adds trust & sample layers
+   ======================================================= */
+
+/* Layout Container */
+.nt-lp {
+  --lp-max-width: 1200px;
+  --lp-section-spacing: 5rem;
+}
+
+.nt-lp-container {
+  max-width: var(--lp-max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4, 1rem);
+}
+
+/* Section Base */
+.nt-lp-section {
+  padding: var(--lp-section-spacing) 0;
+}
+
+.nt-lp-section-heading {
+  font-size: var(--text-2xl, 1.5rem);
+  font-weight: 700;
+  color: var(--color-text, #f8fafc);
+  margin-bottom: var(--space-4, 1rem);
+  text-align: center;
+}
+
+.nt-lp-section-lead {
+  font-size: var(--text-lg, 1.125rem);
+  color: var(--color-text-muted, #94a3b8);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-8, 2rem);
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.nt-lp-hero {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg, #0a0f18) 0%,
+    var(--color-surface, #0f1624) 100%
+  );
+  padding-top: var(--space-16, 4rem);
+  padding-bottom: var(--space-12, 3rem);
+}
+
+.nt-lp-hero-grid {
+  display: grid;
+  gap: var(--space-8, 2rem);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nt-lp-hero-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.nt-lp-eyebrow-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2, 0.5rem);
+  margin-bottom: var(--space-3, 0.75rem);
+  align-items: center;
+}
+
+.nt-lp-eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: var(--text-xs, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(59, 130, 246, 0.16);
+  color: var(--color-primary, #3b82f6);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.nt-lp-eyebrow-tier {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.nt-lp-hero-title {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--color-text, #f8fafc);
+  line-height: 1.2;
+  margin-bottom: var(--space-4, 1rem);
+}
+
+.nt-lp-hero-lead {
+  font-size: var(--text-lg, 1.125rem);
+  color: var(--color-text-muted, #94a3b8);
+  line-height: 1.7;
+  margin-bottom: var(--space-6, 1.5rem);
+}
+
+.nt-lp-hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-6, 1.5rem);
+}
+
+.nt-lp-hero-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: var(--space-2, 0.5rem);
+  color: var(--color-text-soft, #cbd5e1);
+  font-size: var(--text-base, 1rem);
+}
+
+.nt-lp-hero-bullets li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary, #3b82f6);
+  font-weight: 700;
+}
+
+.nt-lp-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3, 0.75rem);
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.nt-lp-hero-footnote {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #64748b);
+  max-width: 520px;
+}
+
+/* Trust Row */
+.nt-lp-trust-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3, 0.75rem);
+  margin-top: var(--space-4, 1rem);
+  padding-top: var(--space-3, 0.75rem);
+  border-top: 1px solid var(--color-border, #1e293b);
+}
+
+@media (min-width: 640px) {
+  .nt-lp-trust-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.nt-lp-trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.nt-lp-trust-label {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nt-lp-trust-value {
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-soft, #cbd5e1);
+}
+
+/* Hero Visual */
+.nt-lp-hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nt-lp-dcs-placeholder {
+  background: var(--color-surface-raised, #141d2e);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-6, 1.5rem);
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+}
+
+.nt-lp-placeholder-label {
+  display: block;
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-muted, #94a3b8);
+  margin-bottom: var(--space-4, 1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nt-lp-dcs-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3, 0.75rem);
+  margin-bottom: var(--space-4, 1rem);
+}
+
+.nt-lp-dcs-score-ring {
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  border: 6px solid rgba(59, 130, 246, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 20%, #1d283a, #020617);
+}
+
+.nt-lp-dcs-score-value {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--color-primary, #3b82f6);
+  line-height: 1;
+}
+
+.nt-lp-dcs-score-caption {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nt-lp-dcs-score-bands {
+  display: flex;
+  gap: var(--space-2, 0.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nt-lp-dcs-band {
+  font-size: var(--text-xs, 0.75rem);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border, #1e293b);
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.nt-lp-dcs-band-high {
+  border-color: rgba(59, 130, 246, 0.7);
+  color: var(--color-primary, #3b82f6);
+}
+
+.nt-lp-dcs-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2, 0.5rem);
+}
+
+.nt-lp-dcs-metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-surface, #0f1624);
+  border-radius: var(--radius-md, 0.75rem);
+  padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+}
+
+.nt-lp-dcs-metric-label {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.nt-lp-dcs-metric-value {
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-soft, #cbd5e1);
+}
+
+.nt-lp-metric-warning {
+  color: #facc15;
+}
+
+/* Social Proof Row */
+.nt-lp-social-proof {
+  margin-top: var(--space-10, 2.5rem);
+  display: grid;
+  gap: var(--space-4, 1rem);
+}
+
+@media (min-width: 768px) {
+  .nt-lp-social-proof {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.nt-lp-quote-card,
+.nt-lp-fit-card {
+  background: var(--color-surface-raised, #141d2e);
+  border-radius: var(--radius-lg, 1rem);
+  border: 1px solid var(--color-border, #1e293b);
+  padding: var(--space-5, 1.25rem);
+}
+
+.nt-lp-quote-text {
+  font-size: var(--text-base, 1rem);
+  color: var(--color-text-soft, #e2e8f0);
+  line-height: 1.7;
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.nt-lp-quote-meta {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nt-lp-fit-heading {
+  font-size: var(--text-sm, 0.875rem);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted, #94a3b8);
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.nt-lp-fit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-soft, #cbd5e1);
+}
+
+.nt-lp-fit-list li + li {
+  margin-top: var(--space-2, 0.5rem);
+}
+
+/* Buttons */
+.nt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3, 0.75rem) var(--space-6, 1.5rem);
+  font-size: var(--text-base, 1rem);
+  font-weight: 600;
+  border-radius: var(--radius-md, 0.75rem);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast, 150ms) ease-out;
+  border: none;
+}
+
+.nt-btn-primary {
+  background: var(--color-primary, #3b82f6);
+  color: #fff;
+}
+
+.nt-btn-primary:hover {
+  background: var(--color-primary-hover, #2563eb);
+  text-decoration: none;
+}
+
+.nt-btn-secondary {
+  background: transparent;
+  color: var(--color-text, #f8fafc);
+  border: 1px solid var(--color-border, #1e293b);
+}
+
+.nt-btn-secondary:hover {
+  background: var(--color-surface-raised, #141d2e);
+  text-decoration: none;
+}
+
+.nt-btn-block {
+  width: 100%;
+}
+
+/* Grid Layouts */
+.nt-lp-grid {
+  display: grid;
+  gap: var(--space-6, 1.5rem);
+}
+
+.nt-lp-grid-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .nt-lp-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.nt-lp-grid-4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .nt-lp-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nt-lp-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Cards */
+.nt-lp-card {
+  background: var(--color-surface-raised, #141d2e);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-6, 1.5rem);
+  transition: border-color var(--transition-fast, 150ms) ease-out,
+    transform var(--transition-fast, 150ms) ease-out;
+}
+
+.nt-lp-card:hover {
+  border-color: var(--color-primary, #3b82f6);
+  transform: translateY(-2px);
+}
+
+.nt-lp-card h3 {
+  font-size: var(--text-lg, 1.125rem);
+  font-weight: 600;
+  color: var(--color-text, #f8fafc);
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.nt-lp-card p {
+  font-size: var(--text-base, 1rem);
+  color: var(--color-text-muted, #94a3b8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.nt-lp-card-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+/* Columns Layout */
+.nt-lp-columns {
+  display: grid;
+  gap: var(--space-6, 1.5rem);
+  text-align: center;
+}
+
+.nt-lp-columns-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .nt-lp-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Stats */
+.nt-lp-stat {
+  padding: var(--space-6, 1.5rem);
+}
+
+.nt-lp-stat-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary, #3b82f6);
+  line-height: 1;
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.nt-lp-stat-label {
+  font-size: var(--text-base, 1rem);
+  color: var(--color-text-muted, #94a3b8);
+}
+
+/* Sample Section */
+.nt-lp-sample {
+  background: var(--color-surface, #0f1624);
+}
+
+.nt-lp-sample-layout {
+  display: grid;
+  gap: var(--space-6, 1.5rem);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .nt-lp-sample-layout {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.nt-lp-sample-placeholder {
+  background: var(--color-surface-raised, #141d2e);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-8, 2rem);
+  width: 100%;
+}
+
+.nt-lp-sample-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3, 0.75rem);
+  justify-content: center;
+  margin-top: var(--space-4, 1rem);
+}
+
+.nt-lp-sample-page {
+  background: var(--color-surface, #0f1624);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-sm, 0.5rem);
+  padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.nt-lp-sample-copy {
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-soft, #cbd5e1);
+}
+
+.nt-lp-sample-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0 0 var(--space-3, 0.75rem);
+}
+
+.nt-lp-sample-list li + li {
+  margin-top: var(--space-1, 0.25rem);
+}
+
+.nt-lp-sample-footnote {
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #64748b);
+}
+
+/* FAQ Section */
+.nt-lp-faq {
+  background: var(--color-surface, #0f1624);
+}
+
+.nt-lp-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nt-lp-faq-list details {
+  background: var(--color-surface-raised, #141d2e);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-md, 0.75rem);
+  margin-bottom: var(--space-3, 0.75rem);
+  overflow: hidden;
+}
+
+.nt-lp-faq-list summary {
+  padding: var(--space-4, 1rem) var(--space-5, 1.25rem);
+  font-weight: 600;
+  color: var(--color-text, #f8fafc);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nt-lp-faq-list summary::after {
+  content: "+";
+  font-size: 1.25rem;
+  color: var(--color-text-muted, #94a3b8);
+  transition: transform var(--transition-fast, 150ms) ease-out;
+}
+
+.nt-lp-faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.nt-lp-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.nt-lp-faq-list details p {
+  padding: 0 var(--space-5, 1.25rem) var(--space-4, 1rem);
+  margin: 0;
+  color: var(--color-text-muted, #94a3b8);
+  line-height: 1.7;
+}
+
+/* Form Section */
+.nt-lp-form-section {
+  background: linear-gradient(
+    180deg,
+    var(--color-surface, #0f1624) 0%,
+    var(--color-bg, #0a0f18) 100%
+  );
+}
+
+.nt-form {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--color-surface-raised, #141d2e);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-8, 2rem);
+  position: relative;
+}
+
+.nt-form-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
+.nt-form-grid {
+  display: grid;
+  gap: var(--space-4, 1rem);
+}
+
+@media (min-width: 640px) {
+  .nt-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nt-form-row-full {
+    grid-column: 1 / -1;
+  }
+}
+
+.nt-form-label {
+  display: block;
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 500;
+  color: var(--color-text, #f8fafc);
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.nt-form-required {
+  color: #ef4444;
+  margin-left: 0.125rem;
+}
+
+.nt-form input,
+.nt-form select,
+.nt-form textarea {
+  width: 100%;
+  padding: var(--space-3, 0.75rem);
+  background: var(--color-bg, #0a0f18);
+  border: 1px solid var(--color-border, #1e293b);
+  border-radius: var(--radius-md, 0.75rem);
+  color: var(--color-text, #f8fafc);
+  font-size: var(--text-base, 1rem);
+  font-family: inherit;
+  transition: border-color var(--transition-fast, 150ms) ease-out;
+}
+
+.nt-form input:focus,
+.nt-form select:focus,
+.nt-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary, #3b82f6);
+}
+
+.nt-form input::placeholder,
+.nt-form textarea::placeholder {
+  color: var(--color-text-muted, #64748b);
+}
+
+.nt-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+}
+
+.nt-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.nt-form button[type="submit"] {
+  margin-top: var(--space-4, 1rem);
+}
+
+.nt-form-footnote {
+  margin-top: var(--space-4, 1rem);
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-muted, #64748b);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Section Background Variants */
+.nt-lp-gap {
+  background: var(--color-bg, #0a0f18);
+}
+
+.nt-lp-included {
+  background: var(--color-surface, #0f1624);
+}
+
+.nt-lp-impact {
+  background: var(--color-bg, #0a0f18);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .nt-lp-section {
+    padding: var(--space-10, 2.5rem) 0;
+  }
+
+  .nt-lp-hero-cta {
+    flex-direction: column;
+  }
+
+  .nt-lp-hero-cta .nt-btn {
+    width: 100%;
+  }
+
+  .nt-form {
+    padding: var(--space-5, 1.25rem);
+  }
+
+  .nt-lp-dcs-metrics {
+    gap: var(--space-2, 0.5rem);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .nt-lp-card,
+  .nt-btn,
+  .nt-form input,
+  .nt-form select,
+  .nt-form textarea,
+  .nt-lp-faq-list summary::after {
+    transition: none;
+  }
+
+  .nt-lp-card:hover {
+    transform: none;
+  }
+}
+</style>
