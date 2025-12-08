@@ -1,18 +1,10 @@
 ---
-/**
- * Digital Credibility Score (DCS) Audit Landing Page
- * Version: 2.0.0 - DIOS Compliant (Elite Tier)
- * PromptCore Alignment: v3.7
- *
- * Measurement Framework v2.1 Compliant
- * All data-nt-* attributes are GOVERNANCE-LOCKED
- */
-
 import BaseLayout from '../layouts/BaseLayout.astro';
+import NTIcon from '../components/NTIcon.astro';
 
 const pageTitle = "Digital Credibility Score Audit | NexTara AI Solutions";
 const pageDescription =
-  "Get a diagnostic Digital Credibility Score (DCS) audit of your website. Technical, UX, schema, and measurement assessment engineered for AI-search and enterprise governance.";
+  "Get a diagnostic Digital Credibility Score (DCS) audit of your website. Technical, UX, schema, and measurement scoring aligned with the NexTara DCS rubric.";
 
 const siteBase = "https://nextara-ai-solutions.netlify.app";
 const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
@@ -67,14 +59,14 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
             </ul>
 
             <div class="nt-lp-hero-cta">
-              
+              <a
                 href="#dcs-form"
                 class="nt-btn nt-btn-primary"
                 data-nt-event="dcs_start"
               >
                 Get My DCS Audit
               </a>
-              
+              <a
                 href="#dcs-included"
                 class="nt-btn nt-btn-secondary"
               >
@@ -211,6 +203,92 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
     </section>
 
     <!-- =======================================================
+         SECTION: FIVE PILLARS OF DIGITAL CREDIBILITY
+         data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
+    ======================================================== -->
+    <section
+      class="nt-lp-section nt-lp-pillars"
+      id="dcs-pillars"
+      data-nt-section="dcs_pillars"
+    >
+      <div class="nt-lp-container">
+        <div class="nt-lp-eyebrow-row nt-lp-eyebrow-centered">
+          <span class="nt-lp-eyebrow-pill">The DCS Framework</span>
+        </div>
+
+        <h2 class="nt-lp-section-heading">Five Pillars of Digital Credibility</h2>
+
+        <p class="nt-lp-section-lead">
+          The Digital Credibility Score measures your website across five foundational
+          pillars. Each pillar contributes to how search engines, AI systems, and human
+          visitors perceive and trust your digital presence.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-pillars">
+          <div class="nt-lp-card nt-lp-pillar-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="compass" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
+            <h3>Discoverability</h3>
+            <p>
+              How well your content surfaces in search and AI-driven experiences.
+              This includes technical SEO, schema markup, entity alignment, and
+              content structure that machines can parse and prioritize.
+            </p>
+          </div>
+
+          <div class="nt-lp-card nt-lp-pillar-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="trust" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
+            <h3>Trust Signals</h3>
+            <p>
+              The credibility markers that tell visitors and algorithms you're
+              legitimate. Social proof, security indicators, transparency elements,
+              and brand consistency that build confidence at every touchpoint.
+            </p>
+          </div>
+
+          <div class="nt-lp-card nt-lp-pillar-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="target" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
+            <h3>Conversion Readiness</h3>
+            <p>
+              The clarity and friction-level of your paths to action. Clear CTAs,
+              intuitive navigation, form optimization, and journey alignment that
+              turn visitors into leads and customers.
+            </p>
+          </div>
+
+          <div class="nt-lp-card nt-lp-pillar-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="scorecard" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
+            <h3>Technical Performance</h3>
+            <p>
+              The speed, stability, and accessibility of your site experience.
+              Core Web Vitals, mobile responsiveness, WCAG compliance, and
+              infrastructure reliability that affect both rankings and user experience.
+            </p>
+          </div>
+
+          <div class="nt-lp-card nt-lp-pillar-card">
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="roadmap" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
+            <h3>Measurement Integrity</h3>
+            <p>
+              The accuracy and coverage of your analytics and tracking. Event
+              instrumentation, attribution clarity, and data governance that ensure
+              you're making decisions on reliable information.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
          SECTION: WHAT'S INCLUDED
          data-nt-section: DIOS measurement anchor (DO NOT MODIFY)
     ======================================================== -->
@@ -224,7 +302,9 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
 
         <div class="nt-lp-grid nt-lp-grid-4">
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">📊</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="scorecard" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Full DCS Scorecard</h3>
             <p>
               Diagnostic scoring across SEO, UX, schema, accessibility, performance,
@@ -233,7 +313,9 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
           </div>
 
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">🧭</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="compass" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>AI-Search Readiness Review</h3>
             <p>
               Evaluation of content hierarchy, internal linking, entities, and markup for
@@ -242,7 +324,9 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
           </div>
 
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">🧱</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="trust" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Experience & Trust Layer Audit</h3>
             <p>
               Assessment of credibility signals, visual hierarchy, messaging clarity,
@@ -251,21 +335,20 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
           </div>
 
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">🎯</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="target" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Measurement & Conversion Review</h3>
             <p>
               Examination of tracking coverage, key events, funnels, and lead capture
               readiness against your growth objectives.
             </p>
           </div>
-        </div>
 
-        <div
-          class="nt-lp-grid nt-lp-grid-3"
-          style="margin-top: var(--space-6, 1.5rem);"
-        >
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">🧩</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="roadmap" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Prioritized Action Roadmap</h3>
             <p>
               A sequenced list of recommendations, grouped by effort and impact, so your
@@ -274,7 +357,9 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
           </div>
 
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">🤝</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="briefing" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Executive Debrief Session</h3>
             <p>
               Live walkthrough of your DCS profile with time for Q&amp;A, trade-off
@@ -283,7 +368,9 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
           </div>
 
           <div class="nt-lp-card">
-            <div class="nt-lp-card-icon" aria-hidden="true">📂</div>
+            <div class="nt-lp-card-icon" aria-hidden="true">
+              <NTIcon name="artifacts" size="var(--icon-size-lg)" color="var(--color-icon-default)" />
+            </div>
             <h3>Implementation-Ready Artifacts</h3>
             <p>
               Clear, organized outputs your internal or external teams can plug directly
@@ -684,6 +771,10 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
   align-items: center;
 }
 
+.nt-lp-eyebrow-centered {
+  justify-content: center;
+}
+
 .nt-lp-eyebrow-pill {
   display: inline-flex;
   align-items: center;
@@ -1022,6 +1113,53 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
   }
 }
 
+/* Five Pillars Grid - 5-column on large screens, centered last row */
+.nt-lp-grid-pillars {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .nt-lp-grid-pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nt-lp-grid-pillars {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Center the last two cards in a 3-column layout */
+  .nt-lp-grid-pillars .nt-lp-pillar-card:nth-child(4) {
+    grid-column: 1 / 2;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: calc(100% - var(--space-6, 1.5rem));
+  }
+  
+  .nt-lp-grid-pillars .nt-lp-pillar-card:nth-child(5) {
+    grid-column: 3 / 4;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: calc(100% - var(--space-6, 1.5rem));
+  }
+}
+
+@media (min-width: 1280px) {
+  .nt-lp-grid-pillars {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  /* Reset centering overrides for 5-column */
+  .nt-lp-grid-pillars .nt-lp-pillar-card:nth-child(4),
+  .nt-lp-grid-pillars .nt-lp-pillar-card:nth-child(5) {
+    grid-column: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+}
+
 /* Cards */
 .nt-lp-card {
   background: var(--color-surface-raised, #141d2e);
@@ -1054,6 +1192,15 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
 .nt-lp-card-icon {
   font-size: 2rem;
   margin-bottom: var(--space-3, 0.75rem);
+}
+
+/* Pillar Card Variant - slightly more compact for 5-column */
+.nt-lp-pillar-card {
+  padding: var(--space-5, 1.25rem);
+}
+
+.nt-lp-pillar-card p {
+  font-size: var(--text-sm, 0.875rem);
 }
 
 /* Columns Layout */
@@ -1090,6 +1237,11 @@ const canonicalUrl = `${siteBase}/digital-credibility-score-audit`;
 .nt-lp-stat-label {
   font-size: var(--text-base, 1rem);
   color: var(--color-text-muted, #94a3b8);
+}
+
+/* Pillars Section Background */
+.nt-lp-pillars {
+  background: var(--color-bg, #0a0f18);
 }
 
 /* Sample Section */

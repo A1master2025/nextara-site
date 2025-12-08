@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nextara-ai-solutions.com/digital-credibility-score-audit",
+      "url": "https://www.nextara-ai-solutions.com/digital-credibility-score-audit",
+      "name": "Digital Credibility Score Audit | NexTara AI Solutions",
+      "description": "Request a Digital Credibility Score Audit to understand whether your current website can realistically reach a DCS 900+ standard.",
+      "isPartOf": {
+        "@id": "https://www.nextara-ai-solutions.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://www.nextara-ai-solutions.com/#dcs-audit-hero-image"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.nextara-ai-solutions.com/#dcs-audit-service",
+      "name": "Digital Credibility Score Audit",
+      "provider": {
+        "@type": "Organization",
+        "name": "NexTara AI Solutions"
+      },
+      "description": "A governance-grade diagnostic that evaluates your website across five pillars of the Digital Credibility Score framework.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "United States"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nextara-ai-solutions.com/#dcs-audit-faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this just an SEO audit with a different label?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A DCS Audit includes SEO and schema, but it also evaluates conversion, trust, analytics, and governance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can my current agency or developer use this audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The audit is vendor-neutral. You keep the score, the findings, and the documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my score is already high?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The audit focuses on unlocking specific opportunities: AI visibility, conversion lift, and governance hardening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you try to sell me a full website rebuild?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if the data justifies it. The DCS Audit is designed to answer: Can this website realistically operate as a DCS 900+ asset?"
+          }
+        }
+      ]
+    }
+  ]
+}

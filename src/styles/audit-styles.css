@@ -1,0 +1,22 @@
+/* ============================================
+   Audit Landing Page - Responsive Grid System
+   ============================================ */
+
+/* Base grid structure - mobile-first (1 column default) */
+.steps-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
