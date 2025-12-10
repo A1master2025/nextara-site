@@ -1,0 +1,150 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   DCS Audit Landing Page Styles — NexTara AI Solutions
+   Version: 1.0.0 | PromptCore v3.7 Aligned
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Audit Hero Variant */
+.hero-section--audit {
+  /* Inherits base hero styles */
+}
+
+/* Executive Summary Grid */
+.audit-summary-grid {
+  display: grid;
+  gap: var(--space-md, 1.5rem);
+}
+
+@media (min-width: 768px) {
+  .audit-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.audit-summary-card {
+  border: 1px solid var(--border-subtle, #1f2933);
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-md, 1.5rem);
+  background: var(--surface-elevated, #020617);
+}
+
+.audit-summary-card .card-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.audit-summary-card .card-value {
+  font-weight: 600;
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.audit-summary-card .card-note {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Process Steps */
+.steps-grid {
+  display: grid;
+  gap: var(--space-md, 1.5rem);
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.step {
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-md, 1.5rem);
+  border: 1px solid var(--border-subtle, #1f2933);
+  background: var(--surface-elevated, #020617);
+}
+
+.step-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: var(--space-sm, 0.75rem);
+  border: 1px solid var(--accent, #3b82f6);
+  color: var(--accent, #3b82f6);
+}
+
+.step-title {
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+/* Risk Classification Grid */
+.risk-grid {
+  display: grid;
+  gap: var(--space-md, 1.5rem);
+}
+
+@media (min-width: 768px) {
+  .risk-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.risk-card {
+  border-radius: var(--radius-lg, 1rem);
+  padding: var(--space-md, 1.5rem);
+  border: 1px solid var(--border-subtle, #1f2933);
+  background: var(--surface-elevated, #020617);
+}
+
+.risk-card--critical { border-color: var(--critical, #ef4444); }
+.risk-card--high { border-color: var(--warn, #f59e0b); }
+.risk-card--medium { border-color: var(--info, #38bdf8); }
+
+.risk-card .card-note {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: var(--space-sm, 0.75rem);
+}
+
+/* FAQ Accordion */
+.faq-list {
+  display: grid;
+  gap: var(--space-sm, 1.25rem);
+}
+
+.faq-item {
+  border-radius: var(--radius-lg, 1rem);
+  padding: 1.25rem var(--space-md, 1.5rem);
+  border: 1px solid var(--border-subtle, #1f2933);
+  background: var(--surface-elevated, #020617);
+}
+
+.faq-question {
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.faq-answer {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Audit Form */
+.audit-form .form-field {
+  margin-bottom: var(--space-sm, 1rem);
+}
+
+.audit-form .btn-block {
+  width: 100%;
+}
+
+/* Focus states for accessibility */
+.audit-form input:focus,
+.audit-form select:focus,
+.audit-form textarea:focus {
+  outline: 2px solid var(--accent, #3b82f6);
+  outline-offset: 2px;
+}

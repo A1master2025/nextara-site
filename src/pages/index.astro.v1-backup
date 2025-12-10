@@ -1,0 +1,475 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = "NexTara AI Solutions – AI-Powered SEO, Accessibility & Performance Optimization";
+const pageDescription = "Enterprise-grade technical optimization for businesses that don't need another designer. Built for AI discoverability, human accessibility, and measurable results.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <main id="main-content">
+    <!-- Section 1: Hero -->
+    <section aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">
+          Your website was built for an older version of search.
+        </h1>
+        <p class="hero-subhead">
+          We make it AI-ready, SEO-ready, and accessible — without rebuilding from scratch.
+        </p>
+        <p class="hero-description">
+          Most businesses don't need another designer. They need technical optimization that's built for how AI systems discover, rank, and recommend content. NexTara delivers enterprise-grade SEO, accessibility, and performance optimization — measurable, repeatable, and built to last.
+        </p>
+        <div class="cta-group">
+          <a href="/digital-credibility-score-audit" class="cta-button cta-primary">
+            Get Your Free DCS Audit
+          </a>
+          <a href="/analytics-assessment" class="cta-button cta-secondary">
+            Analytics Assessment
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Problem Statement -->
+    <section aria-labelledby="problem-heading">
+      <div class="container">
+        <h2 id="problem-heading">Why most websites aren't ready for AI-driven search</h2>
+        <p class="section-intro">
+          Your website may look great. But if it wasn't built with structured data, semantic HTML, and accessibility-first architecture, AI systems can't understand it — and your customers can't find you.
+        </p>
+        <p class="section-note">
+          You don't need a redesign. You need technical optimization that works with what you already have.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: What We Do -->
+    <section aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">What we do</h2>
+        <p class="list-intro">
+          We analyze, optimize, and validate your site across the systems that matter most:
+        </p>
+        <ul class="service-list">
+          <li><strong>AI discoverability:</strong> Structured data, schema markup, and semantic HTML that AI systems can parse and understand.</li>
+          <li><strong>Human accessibility:</strong> WCAG 2.2 compliance that improves usability for everyone — and strengthens your SEO foundation.</li>
+          <li><strong>Technical SEO:</strong> Speed, security, indexability, and crawl efficiency.</li>
+          <li><strong>Analytics clarity:</strong> Clean data pipelines, properly configured tracking, and dashboards that actually inform decisions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 4: 3-Card Grid (Why This Matters) -->
+    <section aria-labelledby="why-matters-heading">
+      <div class="container">
+        <h2 id="why-matters-heading">Why this matters now</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>AI systems rank differently</h3>
+            <p>
+              Large language models and AI-powered search engines don't just crawl your site — they interpret it. If your content isn't structured for machine readability, you're invisible.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Accessibility is foundational</h3>
+            <p>
+              WCAG compliance isn't just about legal risk. It's the same semantic clarity that helps AI systems understand your content, improves your rankings, and makes your site easier to use.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Technical debt compounds</h3>
+            <p>
+              Very few websites are engineered to reach a DCS 900+ foundation. We show you how to get there.
+            </p>
+            <p class="card-note">
+              The Digital Credibility Score (DCS) measures your site's readiness across SEO, accessibility, performance, and AI discoverability on a 0–1000 scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: The Offer (DCS Audit + Analytics Assessment) -->
+    <section aria-labelledby="offer-heading" class="cta-block">
+      <div class="container">
+        <h2 id="offer-heading">Start with clarity</h2>
+        <p>
+          Most websites were built for an older version of search. The <a href="/digital-credibility-score-audit">Digital Credibility Score (DCS) Audit</a> shows you exactly what today's AI systems see — and what they don't.
+        </p>
+        <p>
+          You'll get a detailed breakdown of your site's technical foundation, accessibility gaps, SEO vulnerabilities, and a prioritized roadmap to fix them.
+        </p>
+        <div class="cta-group">
+          <a href="/digital-credibility-score-audit" class="cta-button cta-primary">
+            Request Your DCS Audit
+          </a>
+          <a href="/analytics-assessment" class="cta-button cta-secondary">
+            Analytics Assessment
+          </a>
+        </div>
+        <p class="cta-disclaimer">
+          Both assessments are free. No sales calls, no obligations — just a technical report you can act on immediately.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6: How We Work -->
+    <section aria-labelledby="process-heading">
+      <div class="container">
+        <h2 id="process-heading">How we work</h2>
+        <ol class="process-list">
+          <li>
+            <strong>Audit:</strong> We analyze your site's technical foundation, accessibility compliance, SEO readiness, and AI discoverability.
+          </li>
+          <li>
+            <strong>Prioritize:</strong> We deliver a clear roadmap with high-impact fixes ranked by effort and value.
+          </li>
+          <li>
+            <strong>Optimize:</strong> We implement the changes — structured data, accessibility improvements, performance tuning, analytics configuration.
+          </li>
+          <li>
+            <strong>Validate:</strong> We test, measure, and verify results using the same tools AI systems and search engines rely on.
+          </li>
+        </ol>
+        <p class="section-note">
+          No fluff. No redesigns you don't need. Just measurable improvements to the systems that drive traffic, conversions, and long-term growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 7: Final CTA -->
+    <section aria-labelledby="final-cta-heading" class="cta-block">
+      <div class="container">
+        <h2 id="final-cta-heading">Ready to see what's holding your site back?</h2>
+        <p>
+          Start with a free Digital Credibility Score audit. No sales pitch — just a technical breakdown of where you stand and what to fix first.
+        </p>
+        <div class="cta-group">
+          <a href="/digital-credibility-score-audit" class="cta-button cta-primary">
+            Get Your Free Audit
+          </a>
+          <a href="/analytics-assessment" class="cta-button cta-secondary">
+            Or Start with Analytics
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  /* Skip Link */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-background);
+    padding: var(--spacing-2) var(--spacing-4);
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* Container & Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+  }
+
+  main {
+    padding-top: var(--spacing-20);
+  }
+
+  section {
+    padding: var(--spacing-16) 0;
+  }
+
+  section:first-of-type {
+    padding-top: var(--spacing-24);
+  }
+
+  /* Typography */
+  h1 {
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-text-primary);
+  }
+
+  h2 {
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-6);
+    color: var(--color-text-primary);
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-3);
+    color: var(--color-text-primary);
+  }
+
+  .hero-subhead {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-6);
+  }
+
+  .hero-description {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    max-width: 800px;
+  }
+
+  .section-intro {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-6);
+    max-width: 800px;
+  }
+
+  .section-note {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-tertiary);
+    font-style: italic;
+    margin-top: var(--spacing-6);
+  }
+
+  .list-intro {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-4);
+  }
+
+  .card-note {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-tertiary);
+    margin-top: var(--spacing-3);
+    font-style: italic;
+  }
+
+  .cta-disclaimer {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-tertiary);
+    margin-top: var(--spacing-4);
+    font-style: italic;
+  }
+
+  /* Lists */
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-6) 0;
+  }
+
+  .service-list li {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-4);
+    padding-left: var(--spacing-6);
+    position: relative;
+  }
+
+  .service-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  .process-list {
+    list-style: none;
+    counter-reset: process-counter;
+    padding: 0;
+    margin: var(--spacing-6) 0;
+  }
+
+  .process-list li {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-6);
+    padding-left: var(--spacing-8);
+    position: relative;
+    counter-increment: process-counter;
+  }
+
+  .process-list li::before {
+    content: counter(process-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--spacing-6);
+    height: var(--spacing-6);
+    background: var(--color-primary);
+    color: var(--color-background);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+  }
+
+  /* Card Grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-8);
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+  }
+
+  .card p {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-3);
+  }
+
+  .card p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* CTA Components */
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-6);
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .cta-primary {
+    background: var(--color-primary);
+    color: var(--color-background);
+    border: 2px solid var(--color-primary);
+  }
+
+  .cta-primary:hover,
+  .cta-primary:focus {
+    background: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+  }
+
+  .cta-secondary {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  .cta-secondary:hover,
+  .cta-secondary:focus {
+    background: rgba(96, 165, 250, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .cta-block {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Internal Text Links */
+  a:not(.cta-button):not(.skip-link) {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(96, 165, 250, 0.3);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  a:not(.cta-button):not(.skip-link):hover,
+  a:not(.cta-button):not(.skip-link):focus {
+    text-decoration-color: var(--color-primary);
+  }
+
+  /* Responsive Breakpoints */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: var(--font-size-5xl);
+    }
+
+    .hero-subhead {
+      font-size: var(--font-size-3xl);
+    }
+
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-group {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .cta-button {
+      width: auto;
+      min-width: 200px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+      padding: var(--spacing-20) 0;
+    }
+
+    section:first-of-type {
+      padding-top: var(--spacing-24);
+    }
+  }
+
+  /* Focus Styles */
+  *:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  /* High Contrast Mode Support */
+  @media (prefers-contrast: high) {
+    .card {
+      border-width: 2px;
+    }
+  }
+</style>

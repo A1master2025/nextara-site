@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0-enterprise",
+  "promptcore_ver": "v3.7",
+  "generated_at": "2025-12-05T15:21:47.324250+00:00",
+  "hostname": "LAPTOP-44SF6F51",
+  "artifacts": {
+    "astro": "C:\\Users\\drbri\\OneDrive\\Desktop\\nextara-site\\tools\\audit-package\\src\\pages\\digital-credibility-score-audit.astro",
+    "schema": "C:\\Users\\drbri\\OneDrive\\Desktop\\nextara-site\\tools\\audit-package\\public\\schema-audit.json",
+    "css": "C:\\Users\\drbri\\OneDrive\\Desktop\\nextara-site\\tools\\audit-package\\styles\\audit-styles.css",
+    "readme": "C:\\Users\\drbri\\OneDrive\\Desktop\\nextara-site\\tools\\audit-package\\docs\\readme.md"
+  },
+  "checksums": {
+    "astro": "275e7a389845bcb25ba4b9a451d741c47f0079683dd4fce10c833e0efc88ca78",
+    "schema": "774c7061d667871c092c795d3d2f0660137895f4e236b315a5e78d06e90621f7",
+    "css": "8b4b26322a242ce33377c5eda1a7afafa5e9de6c3ade14e9bc90a87c3e0b52ab",
+    "readme": "3abb1f309b9b26600384255ad169af8a9c66c43b05c5964f4458ffe2edd77ab7"
+  },
+  "validation": {
+    "astro": {
+      "passed": true,
+      "checks": [
+        "PASS: Size 19301B",
+        "PASS: Contains '<main>'",
+        "PASS: Contains '</main>'",
+        "PASS: Contains 'BaseLayout'",
+        "PASS: Contains 'hero-section'",
+        "PASS: Contains 'audit-form'",
+        "PASS: Form labels present"
+      ]
+    },
+    "schema": {
+      "passed": true,
+      "checks": [
+        "PASS: Valid @context",
+        "PASS: Contains WebPage",
+        "PASS: Contains Service",
+        "PASS: Contains FAQPage"
+      ]
+    },
+    "css": {
+      "passed": true,
+      "checks": [
+        "PASS: Size 3523B",
+        "PASS: Contains '.audit-summary-grid'",
+        "PASS: Contains '.risk-grid'",
+        "PASS: Contains '.faq-list'",
+        "PASS: Contains '.audit-form'"
+      ]
+    }
+  }
+}

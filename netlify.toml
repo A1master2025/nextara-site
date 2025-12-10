@@ -1,5 +1,4 @@
-[[redirects]]
-  from = "/analytics-assessment.html"
-  to = "/analytics-assessment"
-  status = 301
-  force = true
+[[headers]]
+  for = "/ecc/*"
+  [headers.values]
+    Basic-Auth = "NexTara-admin-2025:NexTara.ECC-2025"

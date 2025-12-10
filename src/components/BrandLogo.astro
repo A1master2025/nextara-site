@@ -1,0 +1,93 @@
+---
+// BrandLogo.astro
+// Enterprise Gradient Capsule - Brand System v1.2
+// Inline SVG implementation for zero HTTP overhead and full scalability
+// Production-ready with governance corrections applied
+---
+
+<a href="/" class="brand-logo" aria-label="NexTara AI Solutions - Home">
+  <span class="brand-logo-mark" aria-hidden="true">
+    <svg 
+      viewBox="0 0 512 192" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      class="capsule-svg"
+    >
+      <defs>
+        <!-- Border Gradient: Cyan to Blue -->
+        <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
+          <stop offset="50%" style="stop-color:#0099FF;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#4D9FFF;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Interior Fill Gradient: Deep Navy -->
+        <linearGradient id="interiorGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#1a3a52;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#0d1f2d;stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Typography Gradient: White to Light Blue -->
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#D0E8FF;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      
+      <!-- Outer Capsule with Gradient Border -->
+      <rect 
+        x="6" 
+        y="6" 
+        width="500" 
+        height="180" 
+        rx="90" 
+        ry="90" 
+        fill="url(#interiorGradient)" 
+        stroke="url(#borderGradient)" 
+        stroke-width="12"
+        stroke-linejoin="round"
+        class="capsule-border"
+      />
+      
+      <!-- NT Typography with Gradient -->
+      <text 
+        x="256" 
+        y="130" 
+        font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" 
+        font-size="110" 
+        font-weight="700" 
+        text-anchor="middle" 
+        fill="url(#textGradient)"
+        letter-spacing="-4"
+      >NT</text>
+    </svg>
+  </span>
+  
+  <span class="brand-logo-text">
+    <span class="brand-name">NEX TARA</span>
+    <span class="brand-logo-subtext">AI SOLUTIONS</span>
+  </span>
+</a>
+
+<style>
+  /* Capsule SVG specific styles - scoped to this component */
+  .capsule-svg {
+    display: block;
+    height: 100%;
+    width: auto;
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.3));
+    transition: filter 0.3s ease;
+  }
+  
+  /* Enhanced glow on hover */
+  .brand-logo:hover .capsule-svg {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.5));
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .capsule-svg {
+      transition: none;
+    }
+  }
+</style>
