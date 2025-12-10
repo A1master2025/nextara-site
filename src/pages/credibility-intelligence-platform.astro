@@ -1,0 +1,845 @@
+---
+/**
+ * Credibility Intelligence Platform™ Landing Page
+ * Version: 1.0.0 - DIOS Compliant
+ * NexTara UI/JS v2.1 | Boilerplate v2.2
+ * 
+ * Measurement Framework v2.1 Compliant
+ * All data-nt-* attributes are GOVERNANCE-LOCKED
+ */
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NTIcon from "../components/NTIcon.astro";
+
+const pageTitle = "Credibility Intelligence Platform™ | NexTara AI Solutions";
+const pageDescription = "The first enterprise-grade telemetry system built to measure, strengthen, and scale digital credibility across AI-search, user behavior, and conversion pathways.";
+const siteBase = "https://www.nextara-ai-solutions.com";
+const canonicalUrl = `${siteBase}/credibility-intelligence-platform`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+>
+  <!-- Skip Link -->
+  <a href="#cip-conversion" class="nt-skip-link">Skip to conversion form</a>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.nextara-ai-solutions.com/credibility-intelligence-platform",
+    "url": "https://www.nextara-ai-solutions.com/credibility-intelligence-platform",
+    "name": "Credibility Intelligence Platform™ | NexTara AI Solutions",
+    "description": "NexTara's governed telemetry framework for measuring and improving digital credibility.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://www.nextara-ai-solutions.com/#website"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.nextara-ai-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Credibility Intelligence Platform™",
+          "item": "https://www.nextara-ai-solutions.com/credibility-intelligence-platform"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Service -->
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.nextara-ai-solutions.com/credibility-intelligence-platform#service",
+    "name": "Credibility Intelligence Platform™",
+    "description": "Enterprise telemetry system for measuring, diagnosing, and improving digital credibility through governed behavioral intelligence.",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://www.nextara-ai-solutions.com/#organization"
+    },
+    "serviceType": "Digital Credibility Engineering",
+    "areaServed": "US",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Credibility Intelligence Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Telemetry Intelligence Briefing"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Digital Credibility Score Audit"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- DIOS Telemetry Script -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const DIOS_CONFIG = Object.freeze({
+        page: 'credibility-intelligence-platform',
+        page_version: '1.0.0',
+        form_type: 'cip_briefing_request'
+      });
+
+      window.dataLayer = window.dataLayer || [];
+
+      // Section view tracking
+      const sections = document.querySelectorAll('[data-nt-section]');
+      const observed = new Set();
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            const section = entry.target.dataset.ntSection;
+            if (!observed.has(section)) {
+              observed.add(section);
+              window.dataLayer.push({
+                event: 'cip_section_view',
+                section_name: section,
+                page: DIOS_CONFIG.page,
+                page_version: DIOS_CONFIG.page_version,
+                timestamp: new Date().toISOString()
+              });
+              sectionObserver.unobserve(entry.target);
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      sections.forEach(section => sectionObserver.observe(section));
+
+      // Form telemetry
+      const form = document.getElementById('cip-briefing-form');
+      if (form) {
+        let formStartFired = false;
+
+        const fields = form.querySelectorAll('input, textarea, select');
+        fields.forEach(field => {
+          field.addEventListener('focus', () => {
+            if (!formStartFired) {
+              formStartFired = true;
+              window.dataLayer.push({
+                event: 'cip_form_start',
+                form_type: DIOS_CONFIG.form_type,
+                page: DIOS_CONFIG.page,
+                page_version: DIOS_CONFIG.page_version,
+                timestamp: new Date().toISOString()
+              });
+            }
+          }, { once: true });
+        });
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const errors = [];
+
+          if (!formData.get('name')?.trim()) errors.push('name');
+          if (!formData.get('email')?.trim() || !formData.get('email').includes('@')) errors.push('email');
+          if (!formData.get('company')?.trim()) errors.push('company');
+          if (!formData.get('website')?.trim()) errors.push('website');
+
+          const errorContainer = document.getElementById('cip-form-errors');
+          const successContainer = document.getElementById('cip-form-success');
+
+          if (errors.length > 0) {
+            window.dataLayer.push({
+              event: 'cip_form_validation_error',
+              form_type: DIOS_CONFIG.form_type,
+              error_fields: errors,
+              page: DIOS_CONFIG.page,
+              page_version: DIOS_CONFIG.page_version,
+              timestamp: new Date().toISOString()
+            });
+
+            if (errorContainer) {
+              errorContainer.textContent = `Please complete: ${errors.join(', ')}`;
+              errorContainer.style.display = 'block';
+              errorContainer.focus();
+            }
+            if (successContainer) successContainer.style.display = 'none';
+          } else {
+            window.dataLayer.push({
+              event: 'cip_form_submit',
+              form_type: DIOS_CONFIG.form_type,
+              page: DIOS_CONFIG.page,
+              page_version: DIOS_CONFIG.page_version,
+              timestamp: new Date().toISOString()
+            });
+
+            // TODO: Replace with real API endpoint
+            setTimeout(() => {
+              window.dataLayer.push({
+                event: 'cip_form_success',
+                form_type: DIOS_CONFIG.form_type,
+                page: DIOS_CONFIG.page,
+                page_version: DIOS_CONFIG.page_version,
+                timestamp: new Date().toISOString()
+              });
+
+              form.style.display = 'none';
+              if (errorContainer) errorContainer.style.display = 'none';
+              if (successContainer) {
+                successContainer.style.display = 'block';
+                successContainer.focus();
+              }
+            }, 500);
+          }
+        });
+      }
+
+      // CTA click tracking
+      document.querySelectorAll('[data-nt-event]').forEach(el => {
+        el.addEventListener('click', () => {
+          window.dataLayer.push({
+            event: el.dataset.ntEvent,
+            page: DIOS_CONFIG.page,
+            page_version: DIOS_CONFIG.page_version,
+            timestamp: new Date().toISOString()
+          });
+        });
+      });
+    });
+  </script>
+
+  <main class="nt-lp" id="main-content">
+    <!-- ======================================================
+         SECTION: HERO
+         data-nt-section: GOVERNANCE-LOCKED
+    ======================================================= -->
+    <section
+      class="nt-lp-section nt-lp-hero"
+      data-nt-section="cip_hero"
+      data-nt-page="credibility-intelligence-platform"
+      data-nt-version="1.0.0"
+    >
+      <div class="nt-lp-container nt-lp-hero-grid">
+        <div class="nt-lp-hero-content">
+          <div class="nt-lp-eyebrow-row">
+            <span class="nt-lp-eyebrow-pill">Credibility Intelligence Platform</span>
+            <span class="nt-lp-eyebrow-tier">Telemetry-first websites</span>
+          </div>
+
+          <h1 class="nt-lp-hero-title">
+            The First Telemetry-Driven System Built to Measure, Strengthen, and Scale Digital Credibility
+          </h1>
+
+          <p class="nt-lp-hero-lead">
+            Your website already tells a story—search engines, AI systems, and real users are interpreting it whether you're measuring it or not. NexTara's Credibility Intelligence Platform turns that invisible behavior into actionable intelligence that drives visibility, conversions, and growth.
+          </p>
+
+          <ul class="nt-lp-hero-bullets">
+            <li>Full-funnel telemetry from first interaction to conversion</li>
+            <li>Governed diagnostics across UX, schema, analytics, and trust</li>
+            <li>Monthly executive briefings with prioritized recommendations</li>
+            <li>Continuous improvement aligned to your Digital Credibility Score</li>
+          </ul>
+
+          <div class="nt-lp-hero-cta">
+            <a href="#cip-conversion" class="nt-btn nt-btn-primary" data-nt-event="cip_hero_primary">
+              Get a Telemetry Intelligence Briefing
+            </a>
+            <a href="#cip-workflow" class="nt-btn nt-btn-secondary" data-nt-event="cip_hero_secondary">
+              See How the System Works
+            </a>
+          </div>
+
+          <p class="nt-lp-hero-footnote">
+            Built for organizations that treat their website as a measurable growth asset—not a brochure.
+          </p>
+        </div>
+
+        <div class="nt-lp-hero-visual">
+          <div class="nt-lp-dcs-gauge" aria-label="Credibility Intelligence snapshot">
+            <div class="nt-lp-dcs-ring">
+              <span class="nt-lp-dcs-value">946</span>
+              <span class="nt-lp-dcs-label">Sample DCS</span>
+            </div>
+            <div class="nt-lp-dcs-metrics">
+              <div class="nt-lp-dcs-metric">
+                <span class="nt-lp-metric-label">Schema Integrity</span>
+                <span class="nt-lp-metric-value nt-lp-metric-good">Strong</span>
+              </div>
+              <div class="nt-lp-dcs-metric">
+                <span class="nt-lp-metric-label">Measurement</span>
+                <span class="nt-lp-metric-value nt-lp-metric-warning">Needs review</span>
+              </div>
+              <div class="nt-lp-dcs-metric">
+                <span class="nt-lp-metric-label">AI-Search Fit</span>
+                <span class="nt-lp-metric-value">Emerging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: CREDIBILITY GAP
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_gap">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          Your Website Looks Fine. But It Isn't Credible.
+        </h2>
+        <p class="nt-lp-section-lead">
+          Most websites are built for aesthetics—not for measurement, AI-search readiness, or behavioral intelligence. The result is a silent credibility gap between what leadership believes the website delivers and how algorithms and users actually experience it.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-3">
+          <div class="nt-lp-card">
+            <NTIcon name="slash" size={32} />
+            <h3>Invisible to AI-Search</h3>
+            <p>Content lacks structured signals, entity alignment, and schema clarity. AI systems struggle to understand who you serve and why you matter.</p>
+          </div>
+          <div class="nt-lp-card">
+            <NTIcon name="alert-triangle" size={32} />
+            <h3>Fragmented User Experience</h3>
+            <p>Navigation, trust elements, and conversion paths evolve ad-hoc. Visitors hesitate, stall, and drop without you ever knowing where or why.</p>
+          </div>
+          <div class="nt-lp-card">
+            <NTIcon name="trending-down" size={32} />
+            <h3>Unreliable Measurement</h3>
+            <p>Analytics captures only fragments of behavior. Scroll abandonment, section performance, and form friction remain invisible to leadership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: PLATFORM INTRO
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_intro">
+      <div class="nt-lp-container">
+        <div class="nt-lp-eyebrow-row nt-lp-eyebrow-centered">
+          <span class="nt-lp-eyebrow-pill">A New Category in Digital Performance</span>
+        </div>
+        <h2 class="nt-lp-section-heading">
+          A Governed Telemetry System That Measures, Learns, and Improves Your Website—Every Month
+        </h2>
+        <p class="nt-lp-section-lead">
+          The Credibility Intelligence Platform is not an audit, not a dashboard, and not an analytics setup. It is a fully governed intelligence framework that captures user behavior, diagnoses credibility risks, and produces prioritized recommendations with measurable impact.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-3">
+          <div class="nt-lp-card">
+            <NTIcon name="activity" size={32} />
+            <h3>Telemetry</h3>
+            <p>Full-funnel behavioral instrumentation across scroll, sections, CTAs, and forms—built to your Operational Telemetry System standard.</p>
+          </div>
+          <div class="nt-lp-card">
+            <NTIcon name="target" size={32} />
+            <h3>Diagnostics</h3>
+            <p>Structured analysis across UX, schema, analytics, trust, and conversion paths with clear credibility risk and opportunity mapping.</p>
+          </div>
+          <div class="nt-lp-card">
+            <NTIcon name="zap" size={32} />
+            <h3>Continuous Improvement</h3>
+            <p>Monthly recommendations and implementation cycles aligned directly to your Digital Credibility Score and growth objectives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: WORKFLOW MAP
+    ======================================================= -->
+    <section class="nt-lp-section" id="cip-workflow" data-nt-section="cip_workflow">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          The Intelligence Loop Behind Every NexTara Website
+        </h2>
+        <p class="nt-lp-section-lead">
+          Every NexTara engagement follows the same telemetry loop—capture, interpret, recommend, implement, validate. This system turns raw behavior into governed, repeatable business decisions.
+        </p>
+
+        <div class="nt-lp-workflow">
+          <div class="nt-lp-workflow-step">
+            <span class="nt-lp-workflow-number">1</span>
+            <h3>Capture</h3>
+            <p>DIOS telemetry tracks scroll behavior, section views, friction points, CTA engagement, and form flow across devices.</p>
+          </div>
+          <div class="nt-lp-workflow-step">
+            <span class="nt-lp-workflow-number">2</span>
+            <h3>Interpret</h3>
+            <p>Behavioral signals are analyzed to understand where users hesitate, what resonates, what confuses, and what converts.</p>
+          </div>
+          <div class="nt-lp-workflow-step">
+            <span class="nt-lp-workflow-number">3</span>
+            <h3>Recommend</h3>
+            <p>Prioritized, business-aligned recommendations are issued with expected impact, difficulty, and DCS influence.</p>
+          </div>
+          <div class="nt-lp-workflow-step">
+            <span class="nt-lp-workflow-number">4</span>
+            <h3>Implement</h3>
+            <p>Approved changes are deployed across UX, copy, schema, measurement, and performance via governed workflows.</p>
+          </div>
+          <div class="nt-lp-workflow-step">
+            <span class="nt-lp-workflow-number">5</span>
+            <h3>Validate</h3>
+            <p>Telemetry confirms whether changes improved credibility, conversions, and search visibility—closing the loop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: OTS GOVERNANCE
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_ots">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          OTS v1.0: The Governance Framework Behind Your Data
+        </h2>
+        <p class="nt-lp-section-lead">
+          NexTara's Operational Telemetry System defines what "good telemetry" means. Every page, every event, every form follows the same governance standard—so insights are consistent, comparable, and trustworthy.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-3">
+          <div class="nt-lp-card">
+            <h3>Required Events</h3>
+            <p>Page views, section views, CTA clicks, form starts, validation errors, submissions, and success confirmations are mandated across all key pages.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Data Fidelity</h3>
+            <p>Every event carries timestamps, page identifiers, page versions, section names, and event categories with governed naming patterns.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Form Intelligence</h3>
+            <p>Telemetry tracks friction, time-to-start, validation loops, submission success, and CRM routing integrity—not just "form submitted."</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Schema Compliance</h3>
+            <p>WebPage and Service JSON-LD, stable @id references, and zero conflicts with sitewide schema to keep AI-search aligned.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>DIOS Metadata</h3>
+            <p>Standardized data-nt-section, data-nt-event, and data-nt-form attributes allow reliable, scalable measurement across all experiences.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Funnel Completeness</h3>
+            <p>Each landing page includes awareness, trust, consideration, and conversion elements—no exceptions, no guesswork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: DASHBOARD PREVIEW
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_dashboard">
+      <div class="nt-lp-container nt-lp-two-col">
+        <div class="nt-lp-dashboard-preview" aria-label="Telemetry dashboard preview">
+          <div class="nt-lp-dashboard-header">Telemetry Dashboard</div>
+          <div class="nt-lp-dashboard-tabs">
+            <span class="nt-lp-dashboard-tab active">Behavioral Overview</span>
+            <span class="nt-lp-dashboard-tab">Funnel Diagnostics</span>
+            <span class="nt-lp-dashboard-tab">DCS Movement</span>
+          </div>
+          <div class="nt-lp-dashboard-body">
+            <div class="nt-lp-dashboard-metric">
+              <span class="nt-lp-dashboard-metric-label">Engagement Rate</span>
+              <span class="nt-lp-dashboard-metric-value">--</span>
+            </div>
+            <div class="nt-lp-dashboard-metric">
+              <span class="nt-lp-dashboard-metric-label">Form Start Rate</span>
+              <span class="nt-lp-dashboard-metric-value">--</span>
+            </div>
+            <div class="nt-lp-dashboard-metric">
+              <span class="nt-lp-dashboard-metric-label">DCS Change</span>
+              <span class="nt-lp-dashboard-metric-value">--</span>
+            </div>
+          </div>
+        </div>
+        <div class="nt-lp-dashboard-copy">
+          <h2 class="nt-lp-section-heading">Your Website's Behavior, Finally Visible</h2>
+          <p class="nt-lp-section-lead">
+            The Telemetry Dashboard consolidates thousands of behavioral signals into a single operational visibility layer.
+          </p>
+          <ul class="nt-lp-check-list">
+            <li>Scroll-depth heatmaps and section-completion rates</li>
+            <li>CTA engagement maps and conversion-path diagnostics</li>
+            <li>Form friction analysis and abandonment heuristics</li>
+            <li>Source-based behavioral segmentation and DCS tracking</li>
+          </ul>
+          <p class="nt-lp-hero-footnote">
+            No screenshot hunting, no manual reporting. Every metric is wired to your telemetry standards and updated continuously.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: MONTHLY BRIEFING
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_briefings">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          Executive-Ready Insights That Turn Behavior Into Direction
+        </h2>
+        <p class="nt-lp-section-lead">
+          Every month, NexTara delivers a structured intelligence briefing that translates behavior into strategy—what changed, what improved, what's at risk, and what to do next.
+        </p>
+
+        <div class="nt-lp-grid nt-lp-grid-4">
+          <div class="nt-lp-card">
+            <h3>Executive Summary</h3>
+            <p>High-level performance view across traffic, engagement, conversions, and Digital Credibility Score movement.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Behavioral Narrative</h3>
+            <p>A plain-language explanation of what visitors actually did on your site—and what that says about your experience.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Recommendations</h3>
+            <p>Prioritized improvements with expected impact, effort level, and alignment to your strategic objectives.</p>
+          </div>
+          <div class="nt-lp-card">
+            <h3>Next Steps</h3>
+            <p>Confirmed actions, implementation timelines, and telemetry checkpoints to validate impact over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: OUTCOMES
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_outcomes">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          What Organizations Achieve With a Measurement-Driven Website
+        </h2>
+
+        <div class="nt-lp-grid nt-lp-grid-3">
+          <div class="nt-lp-outcome">
+            <NTIcon name="trending-up" size={48} />
+            <h3>Higher Conversion Rates</h3>
+            <p>Reduced friction, optimized pathways, and continuous refinement drive measurable conversion improvements.</p>
+          </div>
+          <div class="nt-lp-outcome">
+            <NTIcon name="shield-check" size={48} />
+            <h3>AI-Search Visibility</h3>
+            <p>Entity alignment, schema integrity, and structured credibility signals improve how AI systems interpret your value.</p>
+          </div>
+          <div class="nt-lp-outcome">
+            <NTIcon name="check-circle" size={48} />
+            <h3>Operational Confidence</h3>
+            <p>Leadership stops guessing and starts executing with clarity—backed by governed, trustworthy data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: DECK DOWNLOAD
+    ======================================================= -->
+    <section class="nt-lp-section" data-nt-section="cip_deck">
+      <div class="nt-lp-container nt-lp-centered">
+        <h2 class="nt-lp-section-heading">
+          See the Full Credibility Intelligence Platform in 10 Slides
+        </h2>
+        <p class="nt-lp-section-lead">
+          Walk through the workflow, governance, dashboard, and outcomes in a concise, executive-ready deck you can share with your leadership team.
+        </p>
+        <a href="/assets/nextara-credibility-intelligence-deck.pdf" class="nt-btn nt-btn-primary" data-nt-event="cip_download_deck">
+          Download the Deck
+        </a>
+        <p class="nt-lp-hero-footnote">
+          Enterprise clarity. Diagnostic rigor. A system, not a service.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SECTION: CONVERSION / FORM
+    ======================================================= -->
+    <section class="nt-lp-section nt-lp-form-section" id="cip-conversion" data-nt-section="cip_conversion">
+      <div class="nt-lp-container">
+        <h2 class="nt-lp-section-heading">
+          Ready to See What Your Website Is Actually Doing?
+        </h2>
+        <p class="nt-lp-section-lead">
+          Request a Telemetry Intelligence Briefing and receive a current-state assessment of your credibility signals, measurement integrity, and behavioral patterns.
+        </p>
+
+        <div
+          id="cip-form-errors"
+          class="nt-form-error"
+          role="alert"
+          aria-live="assertive"
+          style="display: none;"
+          tabindex="-1"
+        ></div>
+
+        <div
+          id="cip-form-success"
+          class="nt-form-success"
+          role="status"
+          aria-live="polite"
+          style="display: none;"
+          tabindex="-1"
+        >
+          <NTIcon name="check-circle" size={32} />
+          <p><strong>Thank you.</strong> We'll review your website and follow up with your Telemetry Intelligence Briefing details within 2 business days.</p>
+        </div>
+
+        <form
+          id="cip-briefing-form"
+          class="nt-form"
+          data-nt-form="cip_briefing_request"
+          novalidate
+        >
+          <div class="nt-form-grid">
+            <div class="nt-form-row">
+              <label for="cip-name">
+                <span class="nt-form-label">Full Name *</span>
+                <input type="text" id="cip-name" name="name" required autocomplete="name" placeholder="Your full name" />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="cip-email">
+                <span class="nt-form-label">Work Email *</span>
+                <input type="email" id="cip-email" name="email" required autocomplete="email" placeholder="you@company.com" />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="cip-company">
+                <span class="nt-form-label">Company *</span>
+                <input type="text" id="cip-company" name="company" required autocomplete="organization" placeholder="Your company name" />
+              </label>
+            </div>
+
+            <div class="nt-form-row">
+              <label for="cip-website">
+                <span class="nt-form-label">Website URL *</span>
+                <input type="url" id="cip-website" name="website" required inputmode="url" autocomplete="url" placeholder="https://yoursite.com" />
+              </label>
+            </div>
+
+            <div class="nt-form-row nt-form-row-full">
+              <label for="cip-context">
+                <span class="nt-form-label">What questions should this briefing help you answer?</span>
+                <textarea id="cip-context" name="context" rows="4" placeholder="For example: how credible do we appear compared to peers, where are we losing trust, what needs to be true before our next major campaign..."></textarea>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="nt-btn nt-btn-primary nt-btn-block" data-nt-event="cip_request_audit">
+            Request My Telemetry Intelligence Briefing
+          </button>
+
+          <p class="nt-form-footnote">
+            Your information is processed securely and used exclusively to coordinate your Telemetry Intelligence Briefing.
+          </p>
+        </form>
+
+        <div class="nt-lp-alt-cta">
+          <a href="/digital-credibility-score-audit" class="nt-btn nt-btn-secondary" data-nt-event="cip_schedule_briefing">
+            Prefer to start with a DCS Audit?
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  /* CIP-specific styles - minimal overrides to existing nt-lp system */
+
+  .nt-lp-workflow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .nt-lp-workflow-step {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--nt-surface-secondary, rgba(255, 255, 255, 0.03));
+    border-radius: var(--nt-radius-lg, 12px);
+    border: 1px solid var(--nt-border-subtle, rgba(255, 255, 255, 0.08));
+  }
+
+  .nt-lp-workflow-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--nt-gradient-primary, linear-gradient(135deg, #3b82f6, #1d4ed8));
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .nt-lp-workflow-step h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    color: var(--nt-text-primary, #fff);
+  }
+
+  .nt-lp-workflow-step p {
+    font-size: 0.875rem;
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.7));
+    line-height: 1.5;
+  }
+
+  .nt-lp-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .nt-lp-dashboard-preview {
+    background: var(--nt-surface-secondary, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--nt-border-subtle, rgba(255, 255, 255, 0.08));
+    border-radius: var(--nt-radius-lg, 12px);
+    overflow: hidden;
+  }
+
+  .nt-lp-dashboard-header {
+    padding: 1rem 1.5rem;
+    background: var(--nt-surface-tertiary, rgba(255, 255, 255, 0.05));
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-bottom: 1px solid var(--nt-border-subtle, rgba(255, 255, 255, 0.08));
+  }
+
+  .nt-lp-dashboard-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--nt-border-subtle, rgba(255, 255, 255, 0.08));
+  }
+
+  .nt-lp-dashboard-tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.6));
+    cursor: default;
+  }
+
+  .nt-lp-dashboard-tab.active {
+    color: var(--nt-text-primary, #fff);
+    border-bottom: 2px solid var(--nt-accent, #3b82f6);
+    margin-bottom: -1px;
+  }
+
+  .nt-lp-dashboard-body {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .nt-lp-dashboard-metric {
+    text-align: center;
+  }
+
+  .nt-lp-dashboard-metric-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.6));
+    margin-bottom: 0.25rem;
+  }
+
+  .nt-lp-dashboard-metric-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.4));
+  }
+
+  .nt-lp-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+
+  .nt-lp-check-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.8));
+  }
+
+  .nt-lp-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--nt-success, #22c55e);
+    font-weight: 700;
+  }
+
+  .nt-lp-outcome {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .nt-lp-outcome h3 {
+    margin: 1rem 0 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .nt-lp-outcome p {
+    color: var(--nt-text-secondary, rgba(255, 255, 255, 0.7));
+  }
+
+  .nt-lp-centered {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .nt-lp-alt-cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .nt-lp-workflow {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .nt-lp-two-col {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nt-lp-workflow {
+      grid-template-columns: 1fr;
+    }
+    .nt-lp-dashboard-body {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
